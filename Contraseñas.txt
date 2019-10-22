@@ -1,0 +1,7 @@
+MySql:
+Usuario:root, Contraseña: 123456789bd
+GmailRegistro:
+Usuario:
+DunordRegistro@gmail.com
+Contraseña:
+dR2019bd
