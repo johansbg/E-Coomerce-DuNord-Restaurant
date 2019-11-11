@@ -68,7 +68,7 @@ include("inc/header.php");
 				</div>
 
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4" style="padding-top: 45px">
 				<div class="well no-padding">
 					<form action="php/Usuario-Validar.php" id="login-form" class="smart-form client-form" method="POST">
 						<header>
