@@ -17,3 +17,71 @@
  * - BODY
  * - CUSTOM STYLES
  */
+ #extr-page #header {
+    background:#2D2E74!important;
+}
+#extr-page-header-space>:first-child {
+    color: #ffffff;
+}
+.btn-danger {
+    color:#2D2E74;
+    background-color: #ffffff;
+    border-color: #2c699d;
+}
+.btn-danger:hover, .btn-danger:active, .btn-danger:active:active, .btn-danger:focus {
+    color: #fff;
+    background-color: #009F43;
+    border-color: #2c699d;
+}
+.client-form header {
+    color: white;
+    background:#2D2E74;
+}
+.smart-form footer {
+    color:#2D2E74;
+    background:#2D2E74;
+}
+.btn-primary {
+    color:#2D2E74;
+    font-weight: bold;
+    background-color: white;
+    border-color: #2c699d;
+}
+#extr-page #header #logo img {
+    width: 100px;
+    background-size: cover;
+}
+#extr-page #header #logo {
+    margin-top: 5px;
+    margin-left: 0;
+}
+.btn, a:link, button {
+    -webkit-tap-highlight-color: #285b86;
+}
+#extr-page .hero {
+    background-image: url(/img/login-register-image.png);
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    background-position: center;
+    margin: 0px 0px 20px 0px;
+    height: 450px;
+    width: 100%;
+    float: left;
+
+}
+#extr-page .hero p{
+    text-align: center;
+    
+}
+#extr-page .hero p img{
+    height: 400px;
+    width: 80%;
+}
+.txt-color-red {
+    color: #2D2E74!important;
+}
+.btn-primary.active, .btn-primary:active, .btn-primary:active:active, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #009F43;
+    border-color: #1f496d;
+}

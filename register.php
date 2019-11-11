@@ -30,12 +30,12 @@ include("inc/header.php");
 			<!--<span id="logo"></span>-->
 
 			<div id="logo-group">
-				<span id="logo"> <img src="<?php echo ASSETS_URL; ?>/img/logo.png" alt="SmartAdmin"> </span>
+				<span id="logo"> <img src="<?php echo ASSETS_URL; ?>/img/Asset 4.png" alt="SmartAdmin"> </span>
 
 				<!-- END AJAX-DROPDOWN -->
 			</div>
 
-			<span id="extr-page-header-space"> <span class="hidden-mobile hiddex-xs">Already registered?</span> <a href="<?php echo APP_URL; ?>/login.php" class="btn btn-danger">Sign In</a> </span>
+			<span id="extr-page-header-space"> <span class="hidden-mobile hiddex-xs">¿Ya tienes una cuenta?</span> <a href="<?php echo APP_URL; ?>/login.php" class="btn btn-danger">Inicia sesión</a> </span>
 
 		</header>
 
@@ -45,18 +45,18 @@ include("inc/header.php");
 			<div id="content" class="container">
 				<?if($_GET[user]==1){?>
 					<div class="row">
-						<h3 class="txt-color-red login-header-big">Su Usuario o Correo ya estan registrados</h3>
+						<h3 class="txt-color-red login-header-big">Su correo ya esta registrado</h3>
 					</div>
 				<?}?>
 
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 hidden-xs hidden-sm">
-						<h1 class="txt-color-red login-header-big">SmartAdmin</h1>
+						<h1 class="txt-color-red login-header-big">Servicio de Domicilio <strong>DuNord</strong></h1>
 						<div class="hero">
 
 					
 
-							<div class="pull-left login-desc-box-l">
+							<!-- <div class="pull-left login-desc-box-l">
 								<h4 class="paragraph-header">It's Okay to be Smart. Experience the simplicity of SmartAdmin, everywhere you go!</h4>
 								<div class="login-app-icons">
 									<a href="javascript:void(0);" class="btn btn-danger btn-sm">Frontend Template</a>
@@ -64,21 +64,21 @@ include("inc/header.php");
 								</div>
 							</div>
 							
-							<img src="<?php echo ASSETS_URL; ?>/img/demo/iphoneview.png" alt="" class="pull-right display-image" style="width:210px">
+							<img src="/img/login-register-image.png" alt="" class="pull-right display-image" style="width:210px"> -->
 							
 						</div>
 
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-								<h5 class="about-heading">About SmartAdmin - Are you up to date?</h5>
+								<h5 class="about-heading">Sobre nuestro servicio</h5>
 								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+								Este proyecto es de caracter academico y es creado para la asignatura Base de Datos. Los derechos de imagen, logo y demas atributos usados son de la empresa Dunord.
 								</p>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-								<h5 class="about-heading">Not just your average template!</h5>
+								<h5 class="about-heading">Nuestro Equipo</h5>
 								<p>
-									Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi voluptatem accusantium!
+								Nuestro equipo esta conformado por: Sebastian Ariza Coll, Johan Burgos Guerrero, Manuel Cabrera Sanchez, Rubén Camero Amador,
 								</p>
 							</div>
 						</div>
@@ -89,32 +89,32 @@ include("inc/header.php");
 
 							<form action="php/demo-register.php" id="smart-form-register" class="smart-form client-form" method="POST">
 								<header>
-									Registration is FREE*
+									El registro es GRATIS*
 								</header>
 
 								<fieldset>
 									<section>
 										<label class="input"> <i class="icon-append fa fa-user"></i>
-											<input type="text" name="username" placeholder="Username">
-											<b class="tooltip tooltip-bottom-right">Needed to enter the website</b> </label>
+											<input type="text" name="username" placeholder="Usuario">
+											<b class="tooltip tooltip-bottom-right">Se necesita para entra al sitio.</b> </label>
 									</section>
 
 									<section>
 										<label class="input"> <i class="icon-append fa fa-envelope"></i>
-											<input type="email" name="email" placeholder="Email address">
-											<b class="tooltip tooltip-bottom-right">Needed to verify your account</b> </label>
+											<input type="email" name="email" placeholder="Correo Electronico">
+											<b class="tooltip tooltip-bottom-right">Se necesita para verificar tu cuenta.</b> </label>
 									</section>
 
 									<section>
 										<label class="input"> <i class="icon-append fa fa-lock"></i>
-											<input type="password" name="password" placeholder="Password" id="password">
-											<b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
+											<input type="password" name="password" placeholder="Contraseña" id="password">
+											<b class="tooltip tooltip-bottom-right">No olvides tu contraseña.</b> </label>
 									</section>
 
 									<section>
 										<label class="input"> <i class="icon-append fa fa-lock"></i>
-											<input type="password" name="passwordConfirm" placeholder="Confirm password">
-											<b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
+											<input type="password" name="passwordConfirm" placeholder="Confirmar contraseña">
+											<b class="tooltip tooltip-bottom-right">No olvides tu contraseña.</b> </label>
 									</section>
 								</fieldset>
 
@@ -122,12 +122,12 @@ include("inc/header.php");
 									<div class="row">
 										<section class="col col-6">
 											<label class="input">
-												<input type="text" name="firstname" placeholder="First name">
+												<input type="text" name="firstname" placeholder="Nombre">
 											</label>
 										</section>
 										<section class="col col-6">
 											<label class="input">
-												<input type="text" name="lastname" placeholder="Last name">
+												<input type="text" name="lastname" placeholder="Apellido">
 											</label>
 										</section>
 									</div>
@@ -136,15 +136,15 @@ include("inc/header.php");
 										<section class="col col-6">
 											<label class="select">
 												<select name="gender">
-													<option value="0" selected="" disabled="">Gender</option>
-													<option value="M">Male</option>
-													<option value="F">Female</option>
-													<option value="N">Prefer not to answer</option>
+													<option value="0" selected="" disabled="">Genero</option>
+													<option value="M">Masculino</option>
+													<option value="F">Femenino</option>
+													<option value="N">Prefiero no responder</option>
 												</select> <i></i> </label>
 										</section>
 										<section class="col col-6">
 											<label class="input"> <i class="icon-append fa fa-calendar"></i>
-												<input type="text" name="request" placeholder="Request activation on" class="datepicker" data-dateformat='yy/mm/dd'>
+												<input type="text" name="request" placeholder="Petición de activacion en" class="datepicker" data-dateformat='yy/mm/dd'>
 											</label>
 										</section>
 									</div>
@@ -152,29 +152,28 @@ include("inc/header.php");
 									<section>
 										<label class="checkbox">
 											<input type="checkbox" name="subscription" id="subscription" value="S">
-											<i></i>I want to receive news and special offers</label>
+											<i></i>Quiero recibir noticias y ofertas especiales.</label>
 										<label class="checkbox">
 											<input type="checkbox" name="terms" id="terms" value="S">
-											<i></i>I agree with the <a href="#" data-toggle="modal" data-target="#myModal"> Terms and Conditions </a></label>
+											<i></i>Estoy de acuerdo <a href="#" data-toggle="modal" data-target="#myModal"> con los terminos y condiciones. </a></label>
 									</section>
 								</fieldset>
 								<footer>
 									<button name="submit" type="submit" class="btn btn-primary">
-										Register
+										Registrarse
 									</button>
 								</footer>
 
 								<div class="message">
 									<i class="fa fa-check"></i>
 									<p>
-										Thank you for your registration!
+										¡Gracias por registrarte!
 									</p>
 								</div>
 							</form>
 
 						</div>
-						<p class="note text-center">*FREE Registration ends on October 2015.</p>
-						<h5 class="text-center">- Or sign in using -</h5>
+						<h5 class="text-center">- Ingresa usando -</h5>
 						<ul class="list-inline text-center">
 							<li>
 								<a href="javascript:void(0);" class="btn btn-primary btn-circle"><i class="fa fa-facebook"></i></a>

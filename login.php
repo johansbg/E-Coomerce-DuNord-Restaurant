@@ -30,12 +30,12 @@ include("inc/header.php");
 	<!--<span id="logo"></span>-->
 
 	<div id="logo-group">
-		<span id="logo"> <img src="<?php echo ASSETS_URL; ?>/img/logo.png" alt="SmartAdmin"> </span>
+		<span id="logo"> <img src="<?php echo ASSETS_URL; ?>/img/Asset 4.png" alt="SmartAdmin"> </span>
 
 		<!-- END AJAX-DROPDOWN -->
 	</div>
 
-	<span id="extr-page-header-space"> <span class="hidden-mobile hiddex-xs">Need an account?</span> <a href="<?php echo APP_URL; ?>/register.php" class="btn btn-danger">Create account</a> </span>
+	<span id="extr-page-header-space"> <span class="hidden-mobile hiddex-xs">¿Necesitas una cuenta?</span> <a href="<?php echo APP_URL; ?>/register.php" class="btn btn-danger">CREAR CUENTA</a> </span>
 
 </header>
 
@@ -50,32 +50,19 @@ include("inc/header.php");
 		<?}?>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
-				<h1 class="txt-color-red login-header-big">SmartAdmin</h1>
-				<div class="hero">
-
-					<div class="pull-left login-desc-box-l">
-						<h4 class="paragraph-header">It's Okay to be Smart. Experience the simplicity of SmartAdmin, everywhere you go!</h4>
-						<div class="login-app-icons">
-							<a href="javascript:void(0);" class="btn btn-danger btn-sm">Frontend Template</a>
-							<a href="javascript:void(0);" class="btn btn-danger btn-sm">Find out more</a>
-						</div>
-					</div>
-					
-					<img src="<?php echo ASSETS_URL; ?>/img/demo/iphoneview.png" class="pull-right display-image" alt="" style="width:210px">
-
-				</div>
-
+				<h1 class="txt-color-red login-header-big">Servicio de Domicilio <strong>DuNord</strong></h1>
+				<div class="hero"></div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-						<h5 class="about-heading">About SmartAdmin - Are you up to date?</h5>
+						<h5 class="about-heading">Sobre nuestro servicio</h5>
 						<p>
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+						Este proyecto es de caracter academico y es creado para la asignatura Base de Datos. Los derechos de imagen, logo y demas atributos usados son de la empresa Dunord.
 						</p>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-						<h5 class="about-heading">Not just your average template!</h5>
+						<h5 class="about-heading">Nuestro Equipo</h5>
 						<p>
-							Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi voluptatem accusantium!
+						Nuestro equipo esta conformado por: Sebastian Ariza Coll, Johan Burgos Guerrero, Manuel Cabrera Sanchez, Rubén Camero Amador,
 						</p>
 					</div>
 				</div>
@@ -85,44 +72,44 @@ include("inc/header.php");
 				<div class="well no-padding">
 					<form action="php/Usuario-Validar.php" id="login-form" class="smart-form client-form" method="POST">
 						<header>
-							Sign In
+							Iniciar sesión
 						</header>
 
 						<fieldset>
 							
 							<section>
-								<label class="label">E-mail</label>
+								<label class="label">Correo Electronico</label>
 								<label class="input"> <i class="icon-append fa fa-user"></i>
 									<input type="email" name="email">
-									<b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Please enter email address/username</b></label>
+									<b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Por favor, ingresar correo electronico.</b></label>
 							</section>
 
 							<section>
-								<label class="label">Password</label>
+								<label class="label">Contraseña</label>
 								<label class="input"> <i class="icon-append fa fa-lock"></i>
 									<input type="password" name="password">
-									<b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Enter your password</b> </label>
+									<b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Ingresa tu contraseña.</b> </label>
 								<div class="note">
-									<a href="<?php echo APP_URL; ?>/forgotpassword.php">Forgot password?</a>
+									<a href="<?php echo APP_URL; ?>/forgotpassword.php">¿Olvidaste tu contraseña?</a>
 								</div>
 							</section>
 
 							<section>
 								<label class="checkbox">
 									<input type="checkbox" name="remember" checked="">
-									<i></i>Stay signed in</label>
+									<i></i>Recordar mi cuenta</label>
 							</section>
 						</fieldset>
 						<footer>
 							<button type="submit" class="btn btn-primary">
-								Sign in
+								Iniciar sesión
 							</button>
 						</footer>
 					</form>
 
 				</div>
 				
-				<h5 class="text-center"> - Or sign in using -</h5>
+				<h5 class="text-center">- Ingresa usando -</h5>
 													
 								<ul class="list-inline text-center">
 									<li>
