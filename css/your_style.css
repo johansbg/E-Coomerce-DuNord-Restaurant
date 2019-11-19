@@ -85,3 +85,66 @@
     background-color: #009F43;
     border-color: #1f496d;
 }
+.btn-primary-landingpage {
+    border: 3px solid #22262e;
+    font-weight: bold;
+    background-color: transparent;
+    color: #22262e;
+}
+.btn-primary-landingpage:hover, .open>.dropdown-toggle.btn-primary-landingpage {
+    color: #22262e;
+    background-color: #fff;
+    border-color: #22262e;
+}
+.btn-primary-landingpage.active, .btn-primary-landingpage:active, .btn-primary-landingpage:active:active {
+    color: #22262e;
+    background-color: #009F43;
+    border-color: #22262e;
+}
+#mainLandingPage{
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    position: relative;
+    background: url(/img/dunordcafelandingpage.png);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    color: #22262e;
+    
+}
+#contentLandingPage{
+    text-align: center;
+    padding: 11%;
+}
+#h1LandingPage{
+    font-weight: 700;
+    font-size: 5em;
+    font-family: Lato;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                 0px 8px 13px rgba(0, 0, 0, 0.1),
+                 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+#h3LandingPage{
+    font-family: Lato;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                 0px 8px 13px rgba(0, 0, 0, 0.1),
+                 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+#hrLandingPage{
+    width: 670px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#logo-group2>span {
+    background-image: url(/img/Asset\ 4.png);
+    background-repeat: no-repeat;
+    background-size: 37%;
+    height: 39px;
+    float: left;
+}
+#logo2 {
+    width: 175px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

@@ -22,179 +22,22 @@ include("inc/header.php");
 
 //include left panel (navigation)
 //follow the tree in inc/config.ui.php
-include("inc/nav.php");
 ?>
 <!-- ==========================CONTENT STARTS HERE ========================== -->
-<!-- MAIN PANEL -->
-<div id="main" role="main">
-	<?php
-		//configure ribbon (breadcrumbs) array("name"=>"url"), leave url empty if no url
-		//$breadcrumbs["New Crumb"] => "http://url.com"
-		include("inc/ribbon.php");
-	?>
 
+<div id="mainLandingPage" role="mainL">
 	<!-- MAIN CONTENT -->
 	<div id="content">
-		<section id="widget-grid" class="">
-			
-			<?php
-				$ui = new SmartUI;
-				$ui->start_track();
-				
-				$carousel1 = $ui->create_carousel(array(
-					'item1' => ASSETS_URL."/img/demo/m1.jpg",
-					'item2' => array(
-						'img' => ASSETS_URL."/img/demo/m2.jpg",
-						'caption' => 
-							'<h4>S2 Background Image</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<br>
-							<a href="javascript:void(0);" class="btn btn-info btn-sm">Read more</a>'
-					),
-					'item3' => array(
-						'img' => array(
-							'src' => ASSETS_URL."/img/demo/m3.jpg",
-							'alt' => 'This is s3 image'
-						)
-					)
-				), 'fade');
-
-				$carousel1->caption('item3', '<h4>S3 Background Image</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<br>
-							<a href="javascript:void(0);" class="btn btn-info btn-sm">Read more</a>');
-
-				$carousel2 = $ui->create_carousel(array(
-					'item1' => ASSETS_URL."/img/demo/m1.jpg",
-					'item2' => array(
-						'img' => ASSETS_URL."/img/demo/m2.jpg",
-						'caption' => 
-							'<h4>S2 Background Image</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<br>
-							<a href="javascript:void(0);" class="btn btn-info btn-sm">Read more</a>'
-					),
-					'item3' => array(
-						'img' => array(
-							'src' => ASSETS_URL."/img/demo/m3.jpg",
-							'alt' => 'This is s3 image'
-						)
-					)
-				), 'fade');
-
-				$carousel2->caption('item3', '<h4>S3 Background Image</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<br>
-							<a href="javascript:void(0);" class="btn btn-info btn-sm">Read more</a>');
-
-				$body = '<div class="row">';
-				$body .='	<div class="col-sm-12 col-md-12 col-lg-6">';
-				$body .=		$carousel1->print_html(true);
-				$body .= '	</div>';
-				$body .= '	<div class="col-sm-12 col-md-12 col-lg-6">';
-				$body .= 		$carousel2->print_html(true);
-				$body .= '	</div>';
-				$body .= '</div>';
-
-				$ui->create_widget()->body('content', $body)
-					->options('editbutton', false)
-					->options('fullscreenbutton', false)
-					->options('deletebutton', false)
-					->options('togglebutton', false)
-					->options('colorbutton', false)
-					->options('editbutton', false)
-					->options('editbutton', false)
-				    ->header('title', '<h2>Galeria de Productos</h2>')->print_html();
-
-			?>
-			
-		</section>
 		<div class="row">
-
 			<!-- SuperBox -->
-			<div class="superbox col-sm-12">
-				<div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-1.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-1.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Miller Cine" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-2.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-2.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Bridge of Edgen" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-3.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-3.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Lines of Friendship" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-4.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-4.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="My new car!" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-5.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-5.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Study Time" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-6.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-6.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="San Francisco Bridge"  class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-7.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-7.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="New Styla"  class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-8.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-8.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Cristpta"  class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-9.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-9.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Cristine Dine"  class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-10.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-10.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Mosaic Clock"  class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-11.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-11.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Elegance"  class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-12.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-12.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="China Town"  class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-13.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-13.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Sky Diving"  class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-14.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-14.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Country Music"  class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-15.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-15.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="You are late!" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-16.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-16.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Royal Bengle Tiger" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-17.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-17.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Snowpine" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-18.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-18.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Hop Jop Mop" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-19.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-19.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Party Girls" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-20.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-20.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Dragon Fly" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-21.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-21.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Kinds Road" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-22.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-22.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Tokyo" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-23.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-23.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Rome" class="superbox-img">
-				</div><!--
-				--><div class="superbox-list">
-					<img src="<?php echo ASSETS_URL; ?>/img/superbox/superbox-thumb-24.jpg" data-img="<?php echo ASSETS_URL; ?>/img/superbox/superbox-full-24.jpg" alt="My first photoshop layer mask on a high end PSD template theme" title="Traning" class="superbox-img">
-				</div>
-				<div class="superbox-float"></div>
-			</div>
+			<div class="col-lg-12">
+                <div id="contentLandingPage">
+                    <h1 id="h1LandingPage">Du Nord - Web Application</h1>
+                    <h3 id="h3LandingPage">Esto es un proyecto estudiantil para la asignatura de Bases de Datos - 201930.</h3>
+                    <hr id="hrLandingPage">
+                    <a class="btn btn-lg btn-primary-landingpage" href="products-view.php"><i class="glyphicon glyphicon-shopping-cart"></i> IR A LA TIENDA </a>
+                </div>              
+            </div>
 			<!-- /SuperBox -->
 			
 			<div class="superbox-show" style="height:300px; display: none"></div>
@@ -202,9 +45,9 @@ include("inc/nav.php");
 		</div>
 	</div>
 	<!-- END MAIN CONTENT -->
-
 </div>
 <!-- END MAIN PANEL -->
+
 
 <!-- ==========================CONTENT ENDS HERE ========================== -->
 

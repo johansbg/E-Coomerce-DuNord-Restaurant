@@ -47,6 +47,7 @@
 
 		<!-- GOOGLE FONT -->
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet"> 
 
 		<!-- Specifying a Webpage Icon for Web Clip
 			 Ref: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
@@ -93,10 +94,10 @@
 		?>
 				<!-- HEADER -->
 				<header id="header">
-					<div id="logo-group">
+					<div id="logo-group2">
 
 						<!-- PLACE YOUR LOGO HERE -->
-						<span id="logo"> <img src="/images/logo/logo.png" alt="Du Nord"> </span>
+						<span id="logo2"></span>
 						<!-- END LOGO PLACEHOLDER -->
 
 						<!-- Note: The activity badge color changes when clicked and resets the number to 0
